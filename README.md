@@ -72,9 +72,11 @@ vvp sim/sim_up_down.vvp
 
 ### Viewing Waveforms in GTKWave
 
-The simulation outputs `.vcd` files inside the `sim/` directory. To open them in GTKWave:
+The simulation outputs `.vcd` files directly in your workspace. To open them in GTKWave:
 ```cmd
-gtkwave sim/up_down_counter.vcd
+gtkwave up_counter.vcd
+# or
+gtkwave up_down_counter.vcd
 ```
 1. In GTKWave, select `tb_up_down_counter` from the hierarchy.
 2. Select signals `clk`, `reset`, `enable`, `up_down`, `count_beh[3:0]`, `count_str[3:0]`, `tc_beh`, and click **Append**.

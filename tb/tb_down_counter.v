@@ -31,7 +31,7 @@ module tb_down_counter;
 
     initial begin
         // Setup waveform dumping for GTKWave
-        $dumpfile("sim/down_counter.vcd");
+        $dumpfile("down_counter.vcd");
         $dumpvars(0, tb_down_counter);
 
         // Header for simulation log
@@ -72,6 +72,8 @@ module tb_down_counter;
 
         $display("\n======================================================================");
         $display("  DOWN COUNTER SIMULATION COMPLETED SUCCESSFULLY                      ");
+        $display("   -> VCD Waveform saved: down_counter.vcd                            ");
+        $display("   -> View with: gtkwave down_counter.vcd                             ");
         $display("======================================================================\n");
         $finish;
     end

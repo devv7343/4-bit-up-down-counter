@@ -62,7 +62,7 @@ module tb_up_down_counter;
 
     initial begin
         // Setup waveform dumping for GTKWave
-        $dumpfile("sim/up_down_counter.vcd");
+        $dumpfile("up_down_counter.vcd");
         $dumpvars(0, tb_up_down_counter);
 
         $display("==========================================================================================");
@@ -110,6 +110,8 @@ module tb_up_down_counter;
 
         $display("\n==========================================================================================");
         $display("   ALL TESTS PASSED! BEHAVIORAL AND STRUCTURAL COUNTERS ARE 100%% EQUIVALENT.              ");
+        $display("   -> VCD Waveform saved: up_down_counter.vcd                                             ");
+        $display("   -> View with: gtkwave up_down_counter.vcd                                              ");
         $display("==========================================================================================\n");
         $finish;
     end

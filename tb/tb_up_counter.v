@@ -29,7 +29,7 @@ module tb_up_counter;
 
     initial begin
         // Setup waveform dumping for GTKWave
-        $dumpfile("sim/up_counter.vcd");
+        $dumpfile("up_counter.vcd");
         $dumpvars(0, tb_up_counter);
 
         // Header for simulation log
@@ -70,6 +70,8 @@ module tb_up_counter;
 
         $display("\n======================================================================");
         $display("   UP COUNTER SIMULATION COMPLETED SUCCESSFULLY                       ");
+        $display("   -> VCD Waveform saved: up_counter.vcd                              ");
+        $display("   -> View with: gtkwave up_counter.vcd                               ");
         $display("======================================================================\n");
         $finish;
     end

@@ -1,0 +1,8 @@
+# Compiled simulation binaries
+*.vvp
+sim/*.vvp
+
+# OS / Temporary files
+.DS_Store
+Thumbs.db
+*.tmp
